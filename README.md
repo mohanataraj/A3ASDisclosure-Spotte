@@ -45,6 +45,14 @@ The "long-press" gesture in our system is not utilized for static "pin dropping"
 - **Dynamic Initialization**: The gesture triggers a bitstream request to populate the coordinate with a unique 3D entity.
 - **Non-Static Logic**: Unlike legacy map markers, these anchors are volatile and subject to Agent-to-Agent (A2A) negotiation protocols.
 
+## PLEASE NOTE 
+### Evolutionary Leap from Legacy "Gifsockets"
+While early technical hacks (e.g., Gifsockets, 2013) demonstrated the feasibility of streaming binary frames into 2D image containers via persistent connections, the A3AS architecture represents a fundamental evolution:
+- **From Frame-Swapping to Mesh-Morphing**: Unlike Gifsockets that append 2D frames, A3AS streams data directly into 3D glTF morph targets and skeletal joints.
+- **From Static Playback to Agentic Inference**: A3AS integrates on-device LLMs to interpret the bitstream, allowing the 3D entity to react with non-deterministic, autonomous behaviors (Voice/Ads/Social).
+- **Bi-Directional Social Fabric**: By utilizing modern WebSockets, agents participate in A2A (Agent-to-Agent) negotiation, a capability entirely absent in legacy uni-directional streaming hacks.
+
+
 ## Defensive Publication Notice
 
 The methods described herein—specifically the streaming of behavioral bitstreams into glTF entities for map-based agentic interaction—are disclosed to establish **Prior Art**. This prevents future patent claims on this specific system design and architecture.
